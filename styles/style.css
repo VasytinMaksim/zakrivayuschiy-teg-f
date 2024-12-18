@@ -365,7 +365,7 @@
 }
 
 .article__img-difficult {
-  filter: saturate(3) invert(70%);
+  filter: blur(1px) grayscale(1) brightness(3);
 }
 
 @media (width <= 375px) {
