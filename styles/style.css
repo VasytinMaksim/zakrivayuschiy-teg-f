@@ -340,8 +340,8 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.article__img-bright {
-  filter: brightness(5);
+.article__img-invert {
+  filter: invert(0.7);
 }
 
 .article__img-blur {
@@ -349,7 +349,7 @@
 }
 
 .article__img-saturate {
-  filter: saturate(3);
+  filter: saturate(3) brightness(5) opacity(0.8);
 }
 
 .article__img-sepia {
