@@ -46,11 +46,11 @@
 .header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
-  margin-block-start: -5px;
+  margin-block-start: -7px;
 }
 
 .header__title {
-  margin-block-start: 15px;
+  margin-block-start: 18px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   padding-block-end: 109px;
 }
@@ -134,15 +134,20 @@
 }
 
 .card__icon-button {
+  display: grid;
+  place-content: center;
   border: 2px solid transparent;
   background-color: transparent;
-  transition-timing-function: ease;
   transition-duration: 0.3s;
+  transition-timing-function: ease;
   cursor: pointer;
-  margin-inline-end: 1px;
-  display: flex;
-  padding: 0;
   width: 38px;
+  margin-inline-end: 7px;
+}
+
+.like-icon {
+  width: 39px;
+  height: 36px;
 }
 
 .card__icon-button:focus {
@@ -163,6 +168,11 @@
   opacity: 0;
 }
 
+.heart {
+  width: 39px;
+  height: 39px;
+}
+
 .contour {
   fill: var(--heart-hover);
   transition-duration: 0.1s;
@@ -172,12 +182,6 @@
   fill: transparent;
   transition-delay: 0.03s;
   transition-duration: 0.3s;
-}
-
-.like-icon {
-  width: 39px;
-  height: 36px;
-  align-items: center;
 }
 
 .like-icon .core {
@@ -299,7 +303,6 @@
 } 
 
 .modal__button {
-  width: 293px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,11 +420,6 @@
     row-gap: 25px;
     padding-block: 27px;
     padding-inline: 40px;
-    
-  }
-
-  .modal__button {
-    width: 257px;
   }
 
   .modal__title {
@@ -441,8 +439,3 @@
   }
  
 }
-
-
-
-
-
